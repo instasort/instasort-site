@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Instasort — Tame your Instagram DMs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: -apple-system, system-ui, Segoe UI, Roboto, sans-serif; margin: 0; color: #0a0a0a; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 32px; }
+    .btn { background: #111; color: #fff; padding: 12px 18px; border-radius: 8px; text-decoration: none; display: inline-block; }
+    .card { border: 1px solid #e5e5e5; border-radius: 12px; padding: 16px; background: #fff; }
+    .grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    header, section { margin: 24px 0; }
+    footer { color: #666; font-size: 13px; border-top: 1px solid #eee; padding-top: 16px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header style="display:flex;justify-content:space-between;align-items:center;">
+      <div style="font-weight:600;">Instasort</div>
+      <a href="#waitlist" class="btn">Join waitlist</a>
+    </header>
+
+    <section>
+      <h1 style="font-size:36px;line-height:1.1;margin:0 0 8px;">Tame your Instagram DMs. Instantly.</h1>
+      <p style="color:#555;max-width:640px;">
+        Instasort auto-sorts brand deals, questions, supporters, and spam into clean folders,
+        so you only see what matters. Works with Instagram <b>Creator</b> & <b>Business</b> accounts.
+      </p>
+      <p><a class="btn" href="#waitlist">Join the waitlist</a></p>
+    </section>
+
+    <section>
+      <h2>Features</h2>
+      <div class="grid">
+        <div class="card"><b>Brand/Collab detection</b><br/>Find proposals & briefs and bubble them to the top.</div>
+        <div class="card"><b>Smart priority</b><br/>Verified badge, followers & links tune importance.</div>
+        <div class="card"><b>Spam filtering</b><br/>Scams & mass outreach grouped for quick review.</div>
+        <div class="card"><b>Question bucket</b><br/>High-quality questions for content & replies.</div>
+        <div class="card"><b>Supporters</b><br/>Fan messages separated from business threads.</div>
+        <div class="card"><b>You stay in control</b><br/>Review before action. Export or delete anytime.</div>
+      </div>
+    </section>
+
+    <section id="waitlist">
+      <h2>Join the waitlist</h2>
+      <p style="color:#555;">Get early access and help us shape the MVP.</p>
+      <!-- We will paste the Tally embed iframe here later -->
+      <div class="card" style="padding:0;height:520px;display:flex;align-items:center;justify-content:center;color:#777;">
+        Waitlist form goes here (Tally)
+      </div>
+      <p style="color:#888;font-size:13px;margin-top:8px;">
+        Works with Instagram <b>Creator & Business</b> accounts. Personal accounts are not supported by Meta’s API.
+      </p>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;">
+        <div>© <span id="year"></span> Instasort</div>
+        <div>
+          <a href="#" style="color:#666;text-decoration:none;margin-right:12px;">Privacy</a>
+          <a href="#" style="color:#666;text-decoration:none;">Terms</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
