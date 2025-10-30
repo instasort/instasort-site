@@ -42,14 +42,24 @@
       </div>
     </section>
 
-    <section id="waitlist">
+    <!-- Waitlist Section -->
+    <section id="waitlist" style="margin-top:80px;">
       <h2>Join the waitlist</h2>
       <p style="color:#555;">Get early access and help us shape the MVP.</p>
-      <!-- We will paste the Tally embed iframe here later -->
-      <div class="card" style="padding:0;height:520px;display:flex;align-items:center;justify-content:center;color:#777;">
-        <iframe data-tally-src="https://tally.so/embed/w2qYlD?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="100" frameborder="0" marginheight="0" marginwidth="0" title="Instasort Waitlist"></iframe>
-<script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+
+      <!-- Embedded Tally Form -->
+      <div class="card" style="padding:0;margin-top:40px;">
+        <iframe data-tally-src="https://tally.so/embed/w2qYlD?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+          loading="lazy"
+          width="100%"
+          height="1186"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          style="border:none;display:block;margin:0 auto;max-width:700px;"
+          title="Instasort Waitlist"></iframe>
       </div>
+
       <p style="color:#888;font-size:13px;margin-top:8px;">
         Works with Instagram <b>Creator & Business</b> accounts. Personal accounts are not supported by Meta’s API.
       </p>
@@ -65,6 +75,28 @@
       </div>
     </footer>
   </div>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  <!-- Footer Scripts -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <script>
+    var d=document,w="https://tally.so/widgets/embed.js",
+    v=function(){
+      if("undefined"!=typeof Tally)Tally.loadEmbeds();
+      else d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function(e){
+        e.src=e.dataset.tallySrc
+      });
+    };
+    if("undefined"!=typeof Tally)v();
+    else if(d.querySelector('script[src="'+w+'"]')==null){
+      var s=d.createElement("script");
+      s.src=w;
+      s.onload=v;
+      s.onerror=v;
+      d.body.appendChild(s);
+    }
+  </script>
 </body>
 </html>
