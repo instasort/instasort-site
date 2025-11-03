@@ -112,4 +112,21 @@
     }
   </script>
 </body>
-</html>
+  <script>
+  // Listen for Tally postMessage when the embedded form is submitted
+  window.addEventListener('message', function (e) {
+    if (e.data && e.data.event === 'Tally.FormSubmitted') {
+      // optional: see what Tally sends
+      // console.log('Tally submission:', e.data);
+
+      // GA4 lead event
+      if (typeof gtag === 'function') {
+        gtag('event', 'generate_lead', {
+          event_category: 'waitlist',
+          event_label: 'instasort_site',
+          value: 1
+        });
+      }
+    }
+  });
+</script></html>
